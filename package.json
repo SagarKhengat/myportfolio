@@ -1,7 +1,7 @@
 {
   "name": "myportfolio",
   "version": "2.1.0",
-  "homepage": "https://SagarKhengat.github.io/myportfolio/",
+  "homepage": "https://sagarkhengat.github.io/myportfolio",
   "scripts": {
     "build": "rimraf ./build && webpack --config ./webpack/webpack.production.config.babel.js --progress --profile --colors",
     "postbuild": "react-snap",
