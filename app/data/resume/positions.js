@@ -1,8 +1,20 @@
 const positions = [{
+  company: 'Manshoud Inc.',
+  position: 'Full Stack Engineer',
+  link: 'https://manshoud.com/',
+  daterange: 'March 2021 - Present',
+  points: [
+    'Development of Hybrid mobile applications using React-Native',
+    'Development of web applications using React',
+    'Manage firebase for serverless architecture',
+    'Making builds and publishing them on App/Play store, GCP',
+    'Requirement gathering during weekly meetings'
+  ],
+},{
   company: 'Copious Healthcare Pvt Ltd',
   position: 'Full Stack Engineer',
   link: 'https://opd.copious.care/',
-  daterange: 'September 2019 - Present',
+  daterange: 'September 2019 - September 2022',
   points: [
     'Development of Hybrid mobile applications using React-Native',
     'Development of web applications using Angular',

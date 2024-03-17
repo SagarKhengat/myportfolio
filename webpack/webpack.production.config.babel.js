@@ -5,6 +5,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ScriptExtHtmlWebpackPlugin from 'script-ext-html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import StatsPlugin from 'stats-webpack-plugin';
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
 const basePath = process.env.BASE_PATH || '';
 
@@ -23,6 +24,12 @@ export default {
       BASE_PATH: JSON.stringify(basePath),
       NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'production'),
       GA_ID: JSON.stringify(process.env.GA_ID || ''),
+    }),
+    new PrerenderSPAPlugin({
+      // Required - The path to the webpack-outputted app to prerender.
+      staticDir: path.join(__dirname, '../build/'),
+      // Required - Routes to render.
+      routes: [ '/', '/about', '/projects', '/stats', '/contact', '/resume' ],
     }),
     new HtmlWebpackPlugin({
       template: 'server/views/index.tpl.html',

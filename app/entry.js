@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router, Switch, Route,
 } from 'react-router-dom';
+import { hydrate, render } from "react-dom";
 
 // Featured
 import About from './views/About';
@@ -15,6 +16,7 @@ import Stats from './views/Stats';
 // All of our CSS
 import './static/css/main.scss';
 
+const rootElement = document.getElementById("root");
 ReactDOM.render(
   <Router basename={BASE_PATH}>
     <Switch>
@@ -28,5 +30,7 @@ ReactDOM.render(
       <Route component={NotFound} status={404} />
     </Switch>
   </Router>,
-  document.getElementById('root'),
+  rootElement, rootElement.hasChildNodes() ? rootElement.firstElementChild : null
 );
+
+

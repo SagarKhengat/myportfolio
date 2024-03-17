@@ -6,7 +6,7 @@ import puppeteer from 'puppeteer';
 import server from '../server/server';
 import { pages, randomString } from './helpers';
 
-require('chai').should();
+// require('chai').should();
 
 const port = process.env.PORT || 7999;
 

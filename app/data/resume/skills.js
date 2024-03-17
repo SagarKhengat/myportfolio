@@ -8,17 +8,17 @@ const skills = [{
 },
 {
   title: 'Java',
-  competency: 3,
+  competency: 1,
   category: ['Mobile App Development', 'Languages', 'Java'],
 },
 {
   title: 'Android',
-  competency: 3,
+  competency: 2,
   category: ['Mobile App Development', 'Java'],
 },
 {
   title: 'Node.JS',
-  competency: 3,
+  competency: 4,
   category: ['Web Development', 'Javascript'],
 },
 {
@@ -28,7 +28,7 @@ const skills = [{
 },
 {
   title: 'React-Native',
-  competency: 3,
+  competency: 4,
   category: ['Web Development', 'Mobile App Development', 'Javascript'],
 },
 {
@@ -42,9 +42,19 @@ const skills = [{
   category: ['Web Development', 'Tools'],
 },
 {
+  title: 'Google Cloud Platform',
+  competency: 2,
+  category: ['Web Development', 'Tools'],
+},
+{
   title: 'MongoDB',
   competency: 2,
-  category: ['Web Development', 'Databases'],
+  category: ['Web Development','Mobile App Development', 'Databases'],
+},
+{
+  title: 'Firebase',
+  competency: 3,
+  category: ['Web Development','Mobile App Development', 'Databases'],
 },
 {
   title: 'MySQL/SQLite/SQL',
